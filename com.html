@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index:99;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.active {
+  background-color:black;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: goldenrod;
+  color: black;
+}
+
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 2500px; /* Used in this example to enable scrolling */
+}
+.navbar-right {
+  float: right;
+}
+
+.container {
+  position: relative;
+  width:100%;
+  margin: 0 auto;
+}
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height:100%;
+}
+
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:black;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 15px;
+-ms-flex: 30%; /* IE10 */
+  flex: 25%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button{
+background-color: white;
+  color: black;
+  border: 2px solid orange;
+border-radius: 12px;
+padding:20px; 
+font-size:35px;
+
+}
+p{
+font-size:23px;
+}	
+
+
+pre{
+font-size:60px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width:100%;
+  }
+img{
+width:100%;
+
+}
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .navbar-right {
+    float: none;
+  }
+   p{
+    font-size:18px;
+  }
+  pre{
+font-size:25px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="m.html" class="logo"><img src="logo.jpg"style="width:50px;height=5px"></a>
+  <div class="navbar-right">
+  <a href="m.html">HOME</a>
+  <a href="residential.html">RESIDENTIAL</a>
+  <a class="active" href="com.html">COMMERCIAL</a>
+  <a href="furniture.html">FURNITURE</a>
+  <a href="deve1.html">DEVELOPERS</a>
+  <a href="contact.html">CONTACT</a>
+  </div>
+</div>
+
+<div class="main">
+ 
+  <div class="container">
+    <img src="commhd3.jpg" style="width:100%">
+    <div class="content" style="padding-left:20px">
+      <h1 style="color:goldenrod"><b>Commercial Interior Designs</b></h1>
+      <p ><q>Good Design is Good Business</q><i>-Thomas J. Watson Jr</i><br>Our uniquely integrated design and contracting services,enables Athira interiors to be a one-stop<br> solution for all your design and project 
+exectution requirements.</p>
+    </div>
+  </div>
+  <div class="center">
+<p>Athira's Commercial Interior Design services encompass a 
+wide range of interior decorators offering designs that are highly professional in nature. We are a group of interior designers 
+who ensure that our clients receive the very best smart commercial interior design, traditional commercial interior design or modern
+ commercial interior design all in accordance to their likeness and their company's brand feel.Athira's Interiors offers bespoke commercial
+ Interior design solution for clients looking to evoke their brand image through functional designed spaces. Our interior 
+design offerings are commercial spaces design includes office interior design, retail interior design, shopping mall design along with spatial 
+designs in community centers, museums, stores, warehouses and libraries.Athira Interior is a one-stop solution to impressively designed commercial interior space.
+</p><img src="retail.jpg" height="200" width="400" style="float:right;padding-bottom:10px;"><br>
+<p ><b><i>The various interior decorating services offered in this segment of Commercial Space Design by Athira Interiors and elsewhere includes
+ the following:</p></b></i><br><p><b style="color:orange">Retail Space Design:</b>This service offering include interior designing of exclusive consumer focused spaces that also contain a characteristic
+ of each brand. These retail space designs are mostly done in Shopping malls interiors, departmental stores, and exclusive showrooms as well as brand
+ specific visual merchandising spaces.</p><br>
+<img src="comm9.jpg"  width="400" height="300" style="float:right;padding-bottom:10px;">
+<p><b style="color:orange">Office Interior Design:</b> This service offering is intended to use space to express various corporate brands
+ and also used in designing office spaces used for various kinds of businesses.<br><br><b style="color:orange">Community Centers, Museums, Stores, Warehouses and Library Design:</b> This 
+design service solution is offered to clients looking to create functional yet highly aesthetically designed public spaces used for various specific 
+community purposes.</p>
+<p><b style="background:orange"><i>Innovative Commercial Interior Design solutions!</b></i></p>
+</div>
+<h1 style="font-size:50px;padding:25px">Gallery</h1>
+<div class="row">
+  <div class="column" style="padding-left:25px">
+    <img src="comm8.jpg" alt="error" style="width:350px;height:300px">
+  </div>
+  <div class="column">
+    <img src="comm2.jpg" alt="error" style="width:350px;height:300px">
+</div>
+  <div class="column" >
+    <img src="comm3.jpg" alt="error" style="width:350px; height:300px">
+	
+  </div>
+
+</div>
+<div>
+<a href="comme1.html">
+<Button class="button" style="float:right;">
+See More </Button>
+</a>
+</div>
+<br>
+
+<div class="footer">
+  <h1 style="text-align:center;color:white">CONTACT DETAILS</h1>
+  <p style="color:goldenrod;font-size:20px">email id:athiradesign@gmail.com</p>                                  
+  <p style="color:goldenrod;font-size:20px">phone   :0442220220 </p>
+  <p style="color:goldenrod;font-size:20px">Address :325,parry company road,coimbatore,641325</p>
+
+</div>
+</div>
+
+</body>
+</html>

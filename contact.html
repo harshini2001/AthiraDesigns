@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position:relative;
+  top: 0;
+  width: 100%;
+  z-index:99;
+}
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:black;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.active {
+  background-color:black;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: goldenrod;
+  color: black;
+}
+
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 500px; /* Used in this example to enable scrolling */
+}
+.navbar-right {
+  float: right;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .navbar-right {
+    float: none;
+  }
+  .bot{
+    background:black;
+  }
+  
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="m.html" class="logo"><img src="logo.jpg"style="width:40px;height=5px"></a>
+  <div class="navbar-right">
+  <a href="m.html">HOME</a>
+  <a href="residential.html">RESIDENTIAL</a>
+  <a href="com.html">COMMERCIAL</a>
+  <a href="furniture.html">FURNITURE</a>
+  <a href="deve1.html">DEVELOPERS</a>
+  <a class="active" href="contact.html">CONTACT</a>
+  </div>
+</div>
+
+<div class="main">
+    <form action="/page.php" style="padding-top: 50px;">
+      <fieldset style="font-size:20px">
+        <legend><b>YOUR CONTACT DETAILS</b></legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="fname">Last name :</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">email id  :</label><br>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="phone">Phone no  :</label><br>
+        <input type="tel" id="phone" name="phone"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+    <div class="footer">
+          <h1 style="text-align:center;color:white">CONTACT DETAILS</h1>
+          <p style="color:goldenrod;font-size:20px">email id:athiradesign@gmail.com</p>                                  
+          <p style="color:goldenrod;font-size:20px">phone   :0442220220 </p>
+          <p style="color:goldenrod;font-size:20px">Address :325,parry company road,coimbatore,641325</p>
+    
+  </div>
+</div>
+
+</body>
+</html>

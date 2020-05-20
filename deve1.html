@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index:99;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.active {
+  background-color:black;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: goldenrod;
+  color: black;
+}
+
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 2500px; /* Used in this example to enable scrolling */
+}
+.navbar-right {
+  float: right;
+}
+
+.container {
+  position: relative;
+  width:100%;
+  margin: 0 auto;
+}
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height:100%;
+}
+
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:black;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.f1{
+  font-size:60px;
+  padding-top:250px;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+@media screen and (max-width: 800px) {
+   .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+  .navbar-right {
+    float: none;
+  }
+  .f1{
+    font-size:35px;
+    padding-top:10px;
+  }
+  
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="m.html" class="logo"><img src="logo.jpg"style="width:50px;height=5px"></a>
+  <div class="navbar-right">
+  <a href="m.html">HOME</a>
+  <a href="residential.html">RESIDENTIAL</a>
+  <a href="com.html">COMMERCIAL</a>
+  <a href="furniture.html">FURNITURE</a>
+  <a class="active" href="deve1.html">DEVELOPERS</a>
+  <a href="contact.html">CONTACT</a>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+    <img src="main.jpg" style="width:100%">
+    <div class="content" style="padding-left:20px">
+      <p class="f1" style="color:goldenrod"><b>Lobbies and Show Flats Interior <br>Design Services and Amentities Design</b></p>
+    </div>
+  </div>
+  <div>
+	    <p style="text-align:center;font-size:30px;"><b>Our Services</b></p>
+    <p style="font-size:25px;">In response to the growing demands from India's leading property developers, Athira Interior Design now offers a spectrum of services
+specifically tailored to the needs of builders. With over 12 years of experience in the industry, our project portfolio include exquisite show flats, grand lobbies 
+immensive sales offices.</p>
+  </div>
+  <div>
+    <p  style="text-align:center;font-size:30px;"><b>AMENTITIES DESIGN</b></p>
+    <p style="font-size:25px;">Whether you are sprucing up your current home or planning to move to a new one, we can make the change simpler and the result more comfortable and beautiful.
+ We will help you at each stage of the process, from staging your home for sale, to the space planning, renovation and interior design of your new home.</p>
+  </div>
+<div>
+    <img src="dev.jpg" alt="error" width="400" style="float:right;padding-right:35px;padding-bottom:20px;">
+<h3 style="color:orange;padding-left:20px;font-size:30px"><br>Interior Design</h3>
+<ul style="font-size:25px" >
+<li>Space Planning.</li>
+<li>2D design plans and 3D renderings.</li>
+<li> Acquisition and arrangement of furniture, window treatments, rugs, lighting, art and accessories.</li></ul>
+
+<h3 style="color:orange;padding-left:20px;font-size:30px">Renovation</h3>
+<ul style="font-size:25px">
+<li>Design plans in 2D and 3D.</li>
+<li> Selection of fixtures and finishes.</li>
+<li>Supervision of contractors to ensure quality workmanship.</li>
+</ul>
+<img src="dev2.jpg" alt="error" width="400" style="float:right;padding-right:35px;padding-bottom:20px;"><br>	
+<h3 style="color:orange;padding-left:20px;font-size:30px">Paint Color Consulting</h3>
+<ul style="font-size:25px">
+<p>Perfect colors for your home in your home, taking into account:
+<li> Exterior and interior lighting.</li>
+<li> Relationship to furnishings</li>
+<li> Color transition from room to room.</li>
+</ul>
+  </div>
+  <p class="f2" style="text-align:center">GALLERY</p>
+<div class="row" > 
+  <div class="column">
+    <img src="fit.jpg" style="width:100%">
+    <img src="fit1.jpg" style="width:100%">
+    <img src="fit2.jpg" style="width:100%">
+    <img src="fit3.jpg" style="width:100%">
+    <img src="fit4.jpg" style="width:100%">
+    <img src="amen.jpg" style="width:100%">
+    <img src="amen1.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="amen2.jpg" style="width:100%">
+    <img src="amen3.jpg" style="width:100%">
+    <img src="gym.jpg" style="width:100%">
+    <img src="amen4.jpg" style="width:100%">
+    <img src="amen5.jpg" style="width:100%">
+    <img src="amen6.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="amen7.jpg" style="width:100%">
+    <img src="amen8.jpg" style="width:100%">
+    <img src="amen9.jpg" style="width:100%">
+    <img src="lob1.jpg" style="width:100%">
+    <img src="lob2.jpg" style="width:100%">
+    <img src="lob3.jpg" style="width:100%">
+  
+ <img src="amen10.jpg" style="width:100%">
+    <img src="amen11.jpg" style="width:100%">
+    
+  </div>
+</div>
+
+<br>
+
+<div class="footer">
+  <h1 style="text-align:center;color:white">CONTACT DETAILS</h1>
+  <p style="color:goldenrod;font-size:20px">email id:athiradesign@gmail.com</p>                                  
+  <p style="color:goldenrod;font-size:20px">phone   :0442220220 </p>
+  <p style="color:goldenrod;font-size:20px">Address :325,parry company road,coimbatore,641325</p>
+
+</div>
+</div>
+
+</body>
+</html>

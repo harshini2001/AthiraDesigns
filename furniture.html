@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index:99;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.active {
+  background-color:black;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: goldenrod;
+  color: black;
+}
+
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 2500px; /* Used in this example to enable scrolling */
+}
+.navbar-right {
+  float: right;
+}
+
+.container {
+  position: relative;
+  width:100%;
+  margin: 0 auto;
+}
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height:100%;
+}
+
+.row1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:black;
+}
+.column1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.f{
+  font-size:25px;
+}
+.f2{
+  font-size:50px;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+@media screen and (max-width: 800px) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .navbar-right {
+    float: none;
+  }
+  .f{
+    font-size:15px;
+  }
+  .f2{
+    font-size:20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="m.html" class="logo"><img src="logo.jpg"style="width:50px;height=5px"></a>
+  <div class="navbar-right">
+  <a href="m.html">HOME</a>
+  <a href="residential.html">RESIDENTIAL</a>
+  <a href="com.html">COMMERCIAL</a>
+  <a class="active" href="furniture.html">FURNITURE</a>
+  <a href="deve1.html">DEVELOPERS</a>
+  <a href="contact.html">CONTACT</a>
+  </div>
+</div>
+
+<div class="main">
+  <h1 style="padding-top:20px"><b>FURNITURE</b></h1>
+  <div class="container">
+    <img src="furni.jpg" style="width:100%">
+    <div class="content" style="padding-left:20px">
+      <p class="f2" style="color:goldenrod"><b>Exquisite furniture custom made for the perfect fit</b></p>
+      <p class="f">Athira Design custom builds an extensive range of exclusive and modern furniture. 
+        We manufacture any size and almost any design. With 'Nitido Premium plus' quality 
+        assurance, you get guaranteed seasoned hardwood frames, branded marine plywood, 
+        branded high quality foam, luxury fabrics and tested ergonomic designs that are durable
+        and built to last in Indian conditions.</p>
+    </div>
+  </div>
+  <div>
+    <p class="f2" style="text-align:center"><b>EXCELLENT QUALITY & FINISHING</b></p>
+    <p class="f">At Athira Design, we have been making premium furniture for our discerning 
+      clientele for more than a decade, and have gained a wealth of experience in furniture design and construction along the way. With us, you get the promise of assured quality and only the best of materials. Furthermore, our in-house multi-stage quality 
+      check process ensures a truly international level of finishing and detailing to all our furniture.</p>
+  </div>
+  <div>
+    <p class="f2" style="text-align:center"><b>TAILOR MADE TO ANY DESIGN, SIZE, AND FINISH </b></p>
+    <p class="f">Our devoted team of expert designers, craftsmen and quality
+       supervisors are adept at producing a range of furniture pieces of different designs, 
+       sizes and finishes. We can use references provided by you or our specialists can recommend 
+       designs based on your unique tastes and requirements.</p>
+  </div>
+  <div>
+    <p class="f2" style="text-align:center"><b>FULL HOME FIT-OUTS COMPLETED IN 8 WEEKS</b></p>
+    <p class="f">Working as a team, we have learned to match high speed
+       with impeccable quality. Our established internal processes allow us to effortlessly
+        deliver larger furniture orders on demanding timelines, all while ensuring the most
+       stringent quality compliance. In as little as eight weeks Athira Design can successfully execute a 
+      complete home furniture package, delivering both happiness and excellence.</p>
+  </div>
+  <p class="f2" style="text-align:center">GALLERY</p>
+<div class="row1">
+  <div class="column1">
+    <img src="f1.jpg" style="width:100%">
+    <img src="f2.jpg" style="width:100%">
+    <img src="f3.jpg" style="width:100%">
+    <img src="f4.jpg" style="width:100%">
+    
+  </div>
+  <div class="column1">
+    <img src="f6.jpg" style="width:100%">
+    <img src="f5.webp" style="width:100%">
+  </div>
+</div>
+<br>
+
+<div class="footer">
+  <h1 style="text-align:center;color:white">CONTACT DETAILS</h1>
+  <p style="color:goldenrod;font-size:20px">email id:athiradesign@gmail.com</p>                                  
+  <p style="color:goldenrod;font-size:20px">phone   :0442220220 </p>
+  <p style="color:goldenrod;font-size:20px">Address :325,parry company road,coimbatore,641325</p>
+
+</div>
+</div>
+
+</body>
+</html>
